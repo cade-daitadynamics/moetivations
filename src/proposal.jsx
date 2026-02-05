@@ -155,6 +155,30 @@ export default function Proposal() {
         rel="stylesheet"
       />
 
+      {/* ── HEADER ── */}
+      <header
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 100,
+          padding: "16px 32px",
+          background: "rgba(255, 255, 255, 0.95)",
+          backdropFilter: "blur(8px)",
+          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+        }}
+      >
+        <img
+          src="/Daita-Dynamics-logo.svg"
+          alt="Daita Dynamics"
+          style={{
+            height: "36px",
+            width: "auto",
+          }}
+        />
+      </header>
+
       {/* ── HERO ── */}
       <section
         style={{
@@ -316,7 +340,6 @@ export default function Proposal() {
             { value: 40, suffix: " min", label: "Discovery Call" },
             { value: 5, suffix: "", label: "Opportunities Found" },
             { value: 6, suffix: "+", label: "Teams Impacted" },
-            { value: 100, suffix: "+", label: "Employees Affected" },
           ].map((stat, i) => (
             <FadeIn key={i} delay={i * 0.1}>
               <div style={{ textAlign: "center", minWidth: "140px" }}>
@@ -609,7 +632,7 @@ export default function Proposal() {
                 margin: "0 0 56px 0",
               }}
             >
-              Everything above came from a single call with two team members.
+              Everything above came from a single call with Alex and Jon.
               The full assessment goes deeper — interviewing your entire team,
               auditing your systems, and mapping every workflow — to build you a
               prioritized, actionable roadmap for AI and automation.
@@ -773,7 +796,7 @@ export default function Proposal() {
               margin: "0 auto 40px",
             }}
           >
-            Let's schedule a 30-minute call to walk through these findings and
+            Let's schedule a 60-minute call to walk through these findings and
             discuss how the assessment would work for your team.
           </p>
           <a
